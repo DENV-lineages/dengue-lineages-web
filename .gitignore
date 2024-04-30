@@ -1,0 +1,27 @@
+# macOS system files
+.DS_Store
+
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+
+# IDE and editor files
+.idea/
+.vscode/
+
+# Compiled files
+*.min.js
+*.min.css
+
+# Log files
+*.log
+
+# Package lock files
+package-lock.json
+yarn.lock

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Grubaugh</title>
+</head>
+<body>
+
+    <section class="container">
+        <div class="ss-navbar" id="navbar"></div>
+    </section>
+
+<section class="hero">
+</section>
+
+<section class="start-section container">
+    <p>Community resources to enhance dengue virus surveillance. If you have suggestions for additional resources to include, <a href="contact.html">please contact us.</a></p>
+
+    <div class="d-flex flex-wrap gap-4x justify-content-center between-section action-buttons-wrapper">
+        <button class="ss-button active" id="pcr-assays">
+            PCR Assays
+        </button>
+        <button class="ss-button" id="sequencing-assays">
+            Sequencing Assays
+        </button>
+        <button class="ss-button" id="bioinformatic-pipelines">
+            Bioinformatic Pipelines
+        </button>
+        <button class="ss-button" id="linage-assignments">
+            Lineage Assignments
+        </button>
+        <button class="ss-button" id="phylogenetics">
+            Phylogenetics
+        </button>
+        <button class="ss-button" id="case-data">
+            Case Data
+        </button>
+    </div>
+
+    <div class="between-section end-section">
+        <div class="flex-column" id="pcr-assays-content" style="display: block;">
+            <div class="mb-5x">
+                <h2>CDC DENV-1-4 Multiplex</h2>
+                <a target="_blank" href="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0002311">Multiplex PCR for detection and serotype identification</a>
+                <p>(developed by CDC)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>CDC Trioplex PCR</h2>
+                <a target="_blank" href="https://www.nature.com/articles/s41467-018-03772-1">Targets DENV, ZIKV, & CHIKV </a> 
+                <p>(developed by CDC)</p>
+                <p>Note: DENV primers can be used independently from the assay and they can be found <a>here.</a></p>
+            </div>
+            <div>
+                <h2>DENV universal MGB TaqMan 2027</h2>
+                <a target="_blank" href="https://www.protocols.io/view/dengue-virus-denv-universal-mgb-taqman-2017-rm7vzrd8gx1w/v4">Targets the capsid peptide coding region of DENV 1-4</a> 
+                <p>(developed by Mackay Lab)</p>
+            </div>
+        </div>
+        
+        <div class="flex-column" id="sequencing-assays-content" style="display: none;">
+            <div class="mb-5x">
+                <h2>DengueSeq</h2>
+                <a target="_blank" href="https://www.protocols.io/view/dengueseq-a-pan-serotype-whole-genome-amplicon-seq-kqdg39xxeg25/v3">Pan-serotype whole genome sequencing using amplicons</a>
+                <p>(developed by Grubaugh Lab)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>CADDE protocols</h2>
+                <a target="_blank" href="https://www.caddecentre.org/protocols/">Whole genome amplicon protocols designed using PrimalScheme </a>
+                <p>(developed by CADDE)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>"Wallou” amplicon protocol</h2>
+                <a target="_blank" href="https://figshare.com/articles/dataset/Protocols_for_full_genome_tailed_amplicon_of_arboviruses/23791719">Tiled amplification protocols for DENV-1-2 and other arbovirus genome sequencing</a>
+                <p>(developed by Wallau Lab)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>“Cruz” amplicon protocol</h2>
+                <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0166093416301562">Targeted full-genome amplification and sequencing of DENV-1-4 in South America</a>
+                <p>(developed by Leguia Lab)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>CDC DENV E gene sequencing assay</h2>
+                <a target="_blank" href="https://journals.asm.org/doi/full/10.1128/jcm.01957-18">Standardized, serotype-specific, Sanger-based method for genotyping analyses</a>
+                <p>(developed by CDC)</p>
+            </div>
+            <div>
+                <h2>Ampi-FlaCk</h2>
+                <a target="_blank" href="https://www.mdpi.com/1999-4915/16/1/23">MinION sequence-based detection of flavivirus (NS5) and chikungunya (E1)</a>
+                <p>(developed by Fiocruz)</p>
+            </div>
+        </div>
+
+        <div class="flex-column" id="bioinformatic-pipelines-content" style="display: none;">
+            <div class="mb-5x">
+                <h2>iVar</h2>
+                <a target="_blank" href="https://github.com/andersen-lab/ivar">Pipeline to generate consensus genomes from Illumina amplicon data</a>
+                <p>(developed by Andersen Lab)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>DengueSeq Pipeline (Illumina)</h2>
+                <a target="_blank" href="https://github.com/grubaughlab/DENV_pipeline">iVar-based pipeline for processing data from the DengueSeq-Illumina protocol</a>
+                <p>(developed by Grubaugh Lab)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>DengueSeq Pipeline (ONT)</h2>
+                <a target="_blank" href="https://github.com/josephfauver/DENV_MinION_Script">ARTIC-based pipeline for processing data from the DengueSeq-ONT protocol</a>
+                <p>(developed by Grubaugh Lab)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>ViralFlow</h2>
+                <a target="_blank" href="https://viralflow.github.io/">Nextflow pipeline for calling viral consensus genome sequences from read alignment data</a>
+                <p>(developed by Fiocruz)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>ViralUnity</h2>
+                <a target="_blank" href="https://github.com/filiperomero2/ViralUnity">Tool to perform data quality control and viral genome reference assembly</a>
+                <p>(developed by Romero-UFRJ)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>ViralConsensus</h2>
+                <a target="_blank" href="https://github.com/niemasd/ViralConsensus">Tool for calling viral consensus genome sequences from read alignment data</a>
+                <p>(developed by Moshiri Lab)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>Genome Detective</h2>
+                <a target="_blank" href="https://www.genomedetective.com/db/ui/login">Web application for generating consensus genomes from metagenomic or amplicon data</a>
+                <p>(developed by Emweb)</p>
+            </div>
+            <div>
+                <h2>CZID</h2>
+                <a target="_blank" href="https://czid.org/">Web application for generating consensus genomes from metagenomic or amplicon data</a>
+                <p>(developed by CZ Biohub)</p>
+            </div>
+
+        </div>
+        
+        <div class="flex-column" id="linage-assignments-content" style="display: none;">
+            <div>
+                <h2>Genome Detective</h2>
+                <a target="_blank" href="https://www.genomedetective.com/app/typingtool/dengue/">Typing tool for serotypes, genotypes, major lineages, and minor lineages</a>
+                <p>(developed by Emweb)</p>
+            </div>
+        </div>
+        
+        <div class="flex-column" id="phylogenetics-content" style="display: none;">
+            <div class="mb-5x">
+                <h2>Representative sequences</h2>
+                <a target="_blank" href="https://github.com/DENV-lineages/lineages-paper/tree/main/representative_sequences ">Sequences with lineage designations for data comparisons</a>
+                <p>(developed by Grubaugh Lab)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>Curated sequences and metadata</h2>
+                <a target="_blank" href="https://github.com/grubaughlab/DENV-genomics/">Updated sequences and metadata from GenBank for global phylogenetics</a>
+                <p>(developed by Grubaugh Lab)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>DENV-Nextstrain</h2>
+                <a target="_blank" href="https://github.com/nextstrain/dengue">Pipeline for building DENV nextstrain pages</a>
+                <p>(developed by Nextstrain)</p>
+            </div>
+            <div>
+                <h2>ViralWasm-Epi</h2>
+                <a target="_blank" href="https://niema-lab.github.io/ViralWasm-Epi/">WebAssembly-based pipeline for multi-sequence alignment and molecular clustering</a>
+                <p>(developed by Moshiri Lab)</p>
+            </div>
+        </div>
+        
+        <div class="flex-column" id="case-data-content" style="display: none;">
+            <div class="mb-5x">
+                <h2>OpenDengue</h2>
+                <a target="_blank" href="https://opendengue.org/">A global database of publicly available dengue case data</a>
+                <p>(developed by LSHTM)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>PAHO/WHO - Dengue</h2>
+                <a target="_blank" href="https://www3.paho.org/data/index.php/en/mnu-topics/indicadores-dengue-en.html">Database of publicly available dengue case data for the Americas</a>
+                <p>(developed by PAHO/WHO)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>Info Dengue</h2>
+                <a target="_blank" href="https://info.dengue.mat.br/">High-resolution dengue case data for Brazil</a>
+                <p>(developed by Fiocruz)</p>
+            </div>
+            <div class="mb-5x">
+                <h2>Dengue Tracker</h2>
+                <a target="_blank" href="https://diseasesurveillance.github.io/dengue-tracker/index.html">Dengue case nowcasting for Brazil</a>
+                <p>(developed by Moraga Lab)</p>
+            </div>
+            <div>
+                <h2>ADVA - Dengue dashboard</h2>
+                <a target="_blank" href="https://www.adva.asia/dengue-dashboard/">High-resolution dengue case data for Asia</a>
+                <p>(developed by ADVA)</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<div id="footer-container"></div>
+<script src="../js/footer.js"></script>

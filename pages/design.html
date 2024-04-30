@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Grubaugh</title>
+</head>
+<body>
+
+    <section class="container">
+        <div class="ss-navbar" id="navbar"></div>
+    </section>
+
+
+<section class="hero">
+</section>
+
+<section class="start-section container">
+    <p>This page contains instructions on designating new lineages. In other words, these are the rules for suggesting a new sub-genotypic grouping. If you are looking for where to assign an existing lineage to new sequences, please use one of our partner assignment tools, found on the <a href="/pages/resources.html">Resources Page.</a></p>
+
+    <div class="d-flex flex-wrap gap-4x justify-content-center between-section action-buttons-wrapper">
+        <button class="ss-button active" id="design-overview">
+            Overview
+        </button>
+        <button class="ss-button" id="design-requirements">
+            Requirements
+        </button>
+        <button class="ss-button" id="design-nomenclature">
+            Nomenclature
+        </button>
+        <button class="ss-button" id="design-how-to">
+            How to Submit
+        </button>
+    </div>
+
+    <div class="between-section end-section">
+        <div class="flex-column" id="design-overview-content" style="display: block;">
+            <p>This system is built off experience developing lineage systems for other viruses of public health importance, and is the result of a global collaboration of researchers and public health professionals. It aims to provide additional spatial and temporal resolution with which to discuss the large genetic diversity of dengue virus. Specifically, it splits up existing genotypes into smaller groups and provides a standardized, neutral naming system.</p>
+            <p>Broadly speaking, we define <strong>major</strong> and <strong>minor</strong> lineages within each genotype. These lineages are defined by the same <a href="https://github.com/DENV-lineages/denv-lineage-designation/blob/main/README.md" target="_blank">rules</a>, but use different <a class="link" id="nomenclature">nomenclature.</a> In theory, minor lineages should be more useful for country-specific questions, and major lineages for regional questions. Of course, it won't always necessarily work that - some minor lineages are very widepsread, and some major lineages are geographically limited.</p>
+            <p>We designated an initial set of lineages based on all publicly available whole genome sequences with coverage greater than 70% in mid-2023. We envision two ways of generating new lineage suggestions. The first is through <a href="https://github.com/DENV-lineages" target="_blank">community effort via a github repo</a>, which is what this page is designed to help with. Here, members of the dengue research/public health community can suggest new lineages to help with their surveillance efforts. These will be reviewed with some regularity and given a “putative” name. The second method is an annual review, where all publicly available whole genome data is run through custom scripts to ensure that all new lineages have been identified, including appropriate putative ones suggested throughout the year. These will then be reviewed by an advisory board and assignment tools are updated.</p>
+            <p>The community effort therefore is a way of getting a lineage designation <strong>in between</strong> annual reviews, although if it is a valid lineage, rest assured that it will be included in the system at the annual review regardless of whether it is pitched on the github repository.</p>
+        </div>
+        <div class="flex-column" id="design-requirements-content" style="display: none;">
+            <p>There are three rules which must be met for a putative new lineage to be named.</p>
+            <p>We note that we designate lineages based on defining <strong>nodes</strong> - i.e. all of the tips downstream of this node will be included in the lineage definition.</p>
+            <ol>
+                <li>The branch leading up to the defining node should be <strong>at least 25 substitutions long</strong></li>
+                <li>There should be at least <strong>15 sequences</strong> in the putative clade</li>
+                <li>There should be at least one <strong>sister lineage</strong> the same number of nodes away from the parent defining node. This may be an existing or a new lineage.</li>
+            </ol>
+            <p>We understand that third rule in particular may be challenging to do manually, and so we provide some python scripts for identifying sister lineages <a href="https://github.com/DENV-lineages/lineages-paper">here</a>. We do not recommend using the scripts on this repository for branch length because they are specific to our alignment length.</p>
+            <p>Figure one shows examples of acceptable and non-acceptable lineage suggestions:</p>
+            <img class="img-fluid mt-6x" src="../assets/img/requirements.png" alt="Examples of putative lineages and how they fit with the rules">
+        </div>
+        <div class="flex-column" id="design-nomenclature-content" style="display: none;">
+            <p>The nomenclature system is split into two levels, named major and minor lineages. As it stands, these levels have the same defining rules but use different naming systems.</p>
+            <p>Major lineages are defined using <strong>letters</strong> and minor lineages are defined using <strong>dots and numbers</strong>. Importantly, there is only one level of major lineages, but there can be as many nested levels of minor lineages as required.</p>
+            <p>To come up with a new name for a putative lineage:</p>
+            <ul>
+                <li>Identify which is the <strong>parent lineage</strong>. For example, if it falls into 2V_A then that is what the name will start with.</li>
+                <li>Check which names are <a href="lineages.html">already used</a> in this parent lineage.</li>
+                <li>For putative major lineages: choose the next letter in the roman alphabet in that genotype. Eg if there is already genotype I major lineage A and B, the next lineage will be genotype I major lineage C.</li>
+                <li>For putative minor lineages: choose the next number in the parent lineage. For example if 2V_A.1.1 and 2V_A.1.2 exist, then the next lineage will be 2V_A.1.3.</li>
+            </ul>
+            <p>Within a parent lineage, the numbers and letters are somewhat arbitrary - i.e. 2V_A.1 and 2V_A.2 are not necessarily immediate sister lineages, they were simply designated in that order. This is in part because the vertical axis of a vertical rectangular phylogeny (i.e. all of the phylogenies on this website) is itself arbitrary, and branches can be rotated around nodes without changing the topology.</p>
+
+        </div>
+        <div class="flex-column" id="design-how-to-content" style="display: none;">
+            <p>You have two options. The first is to just wait for the annual review - if the lineage meets all of our criteria and the data is on genbank, then it will be designated as part of this process.</p>
+            <p>The second is to submit an issue to our <a target="_blank" href="https://github.com/DENV-lineages/denv-lineages.github.io">github repository</a> using the issue template provided by clicking on issues, and then “new issue”.</p>
+            <img class="img-fluid mt-6x" src="../assets/img/issue_template.png" alt="Github issue template">
+        </div>
+    </div>
+
+</section>
+
+<div id="footer-container"></div>
+<script src="../js/footer.js"></script>

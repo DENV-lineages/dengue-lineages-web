@@ -1,0 +1,2403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Grubaugh</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="ss-navbar" id="navbar"></div>
+    </section>
+
+    <section class="hero"></section>
+
+    <section class="container start-section">
+      <p>
+        Data last downloaded on <i><strong>2023-07-28</strong></i>
+      </p>
+      <p>
+        We currently catalog more than 100 officially designated lineages. If an
+        exact sequence you expect to see here seems missing, it may not have
+        been released yet on genbank, or it may have been downsampled out.
+      </p>
+      <p>
+        Use <a href="https://www.genomedetective.com/app/typingtool/dengue/" target="_blank">Genome Detective</a> to find out what your lineage sequence is.
+      </p>
+      <p>
+        The global distribution and phylogenetic tree of each genotype, major
+        lineage, and minor lineage can be visualized by clicking the names in
+        the table.
+      </p>
+
+      <div
+        class="d-flex flex-wrap gap-4x justify-content-center between-section action-buttons-wrapper"
+      >
+        <button class="ss-button active" id="lineages-genotypes">
+          Genotypes
+        </button>
+        <button class="ss-button" id="lineages-major">Major Lineages</button>
+        <button class="ss-button" id="lineages-minor">Minor Lineages</button>
+      </div>
+
+      <div
+        class="between-section align-items-md-center flex-column end-section"
+        id="lineages-genotypes-content"
+        style="display: flex"
+      >
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Genotype</th>
+                <th>Size</th>
+                <th>Most common region</th>
+                <th>First sampled</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_K,1I_B,1I_A,1I_K.1,1I_G,1I_K.2,1I_E,1I_J,1I_H,1I_E.1,1I_F,1I_K.3,1I_H.1,1I"
+                    >1I</a
+                  >
+                </td>
+                <td>3294</td>
+                <td>Southeast Asia</td>
+                <td>1981-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1IV,1IV_B.2,1IV_B.1,1IV_A,1IV_B"
+                    >1II</a
+                  >
+                </td>
+                <td>113</td>
+                <td>Southeast Asia</td>
+                <td>1974-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1II"
+                    >1III</a
+                  >
+                </td>
+                <td>2</td>
+                <td>Southeast Asia</td>
+                <td>1960-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1V_D.2,1V_G,1V_C,1V_D.1,1V,1V_B,1V_F,1V_D,1V_A,1V_E"
+                    >1IV</a
+                  >
+                </td>
+                <td>1684</td>
+                <td>South America</td>
+                <td>1956-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1III_A,1III"
+                    >1V</a
+                  >
+                </td>
+                <td>351</td>
+                <td>East Asia</td>
+                <td>1973-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1VI_B,1VI,1VI_A"
+                    >1VI</a
+                  >
+                </td>
+                <td>27</td>
+                <td>Sub Saharan Africa</td>
+                <td>1971-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2V_A,2V,2V_A.1,2V_A.2"
+                    >2I</a
+                  >
+                </td>
+                <td>1285</td>
+                <td>Southeast Asia</td>
+                <td>1964-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2IV"
+                    >2II</a
+                  >
+                </td>
+                <td>12</td>
+                <td>Southeast Asia</td>
+                <td>1988-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_D,2III_C.1,2III_C.1.1,2III_D.2,2III_C,2III,2III_D.1.2,2III_D.1.1,2III_D.1,2III_C.2"
+                    >2III</a
+                  >
+                </td>
+                <td>1243</td>
+                <td>South America</td>
+                <td>1981-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_E,2II_A,2II_B,2II_F.1,2II_E.2,2II_F.2,2II_A.1,2II_F,2II_D.2,2II_D,2II,2II_F.1.2,2II_A.2.1,2II_A.2"
+                    >2IV</a
+                  >
+                </td>
+                <td>1337</td>
+                <td>East Asia</td>
+                <td>1969-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2I"
+                    >2V</a
+                  >
+                </td>
+                <td>37</td>
+                <td>Pacific</td>
+                <td>1960-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2VI"
+                    >2VI</a
+                  >
+                </td>
+                <td>23</td>
+                <td>Sub Saharan Africa</td>
+                <td>1966-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3V"
+                    >3I</a
+                  >
+                </td>
+                <td>3</td>
+                <td>Southeast Asia</td>
+                <td>1956-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3I_C,3I,3I_A.2,3I_A.1,3I_A"
+                    >3II</a
+                  >
+                </td>
+                <td>161</td>
+                <td>East Asia</td>
+                <td>1978-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3II_B,3II"
+                    >3III</a
+                  >
+                </td>
+                <td>714</td>
+                <td>Southeast Asia</td>
+                <td>1973-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3III_B.1,3III,3III_A.2,3III_B,3III_A,3III_C.2,3III_C.1,3III_C,3III_B.3,3III_B.2"
+                    >3IV</a
+                  >
+                </td>
+                <td>1223</td>
+                <td>North America</td>
+                <td>1966-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4IV"
+                    >4I</a
+                  >
+                </td>
+                <td>7</td>
+                <td>Southeast Asia</td>
+                <td>1973-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4III"
+                    >4II</a
+                  >
+                </td>
+                <td>9</td>
+                <td>Southeast Asia</td>
+                <td>1996-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4I_B,4I,4I_B.1"
+                    >4III</a
+                  >
+                </td>
+                <td>678</td>
+                <td>Southeast Asia</td>
+                <td>1956-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4II_A.1,4II,4II_A.2,4II_B,4II_A"
+                    >4IV</a
+                  >
+                </td>
+                <td>299</td>
+                <td>South America</td>
+                <td>1953-01-01</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="lineages-figures-section between-section">
+          <div class="lineages-figure-wrapper">
+            <img
+              class="img-fluid"
+              src="../assets/img/lineages-pic-1.png"
+              alt="Maximum likelihood phylogeny showing genotypes for each serotype"
+            />
+            <div class="buttons-wrapper">
+              <a
+                class="expand-btn"
+                type="button"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#expand-lineages-pic-1"
+              >
+                Expand
+              </a>
+              <a
+                href="../assets/img/lineages-pic-1.png"
+                download
+                class="download-btn"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="expand-lineages-pic-1"
+            tabindex="-1"
+            aria-labelledby="expand-lineages-pic-1-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid w-100 h-auto"
+                    height="auto"
+                    src="../assets/img/lineages-pic-1.png"
+                    alt="Maximum likelihood phylogeny showing genotypes for each serotype"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lineages-figure-wrapper">
+            <img
+              class="img-fluid"
+              src="../assets/img/lineages-pic-2.png"
+              alt="Maximum likelihood phylogeny showing genotypes for each serotype"
+            />
+            <div class="buttons-wrapper">
+              <a
+                class="expand-btn"
+                type="button"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#expand-lineages-pic-2"
+              >
+                Expand
+              </a>
+              <a
+                href="../assets/img/lineages-pic-2.png"
+                download
+                class="download-btn"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="expand-lineages-pic-2"
+            tabindex="-1"
+            aria-labelledby="expand-lineages-pic-2-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid w-100 h-auto"
+                    height="auto"
+                    src="../assets/img/lineages-pic-2.png"
+                    alt="Maximum likelihood phylogeny showing genotypes for each serotype"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lineages-figure-wrapper">
+            <img
+              class="img-fluid"
+              src="../assets/img/lineages-pic-3.png"
+              alt="Maximum likelihood phylogeny showing genotypes for each serotype"
+            />
+            <div class="buttons-wrapper">
+              <a
+                class="expand-btn"
+                type="button"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#expand-lineages-pic-3"
+              >
+                Expand
+              </a>
+              <a
+                href="../assets/img/lineages-pic-3.png"
+                download
+                class="download-btn"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="expand-lineages-pic-3"
+            tabindex="-1"
+            aria-labelledby="expand-lineages-pic-3-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid w-100 h-auto"
+                    height="auto"
+                    src="../assets/img/lineages-pic-3.png"
+                    alt="Maximum likelihood phylogeny showing genotypes for each serotype"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lineages-figure-wrapper">
+            <img
+              class="img-fluid"
+              src="../assets/img/lineages-pic-4.png"
+              alt="Maximum likelihood phylogeny showing genotypes for each serotype"
+            />
+            <div class="buttons-wrapper">
+              <a
+                class="expand-btn"
+                type="button"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#expand-lineages-pic-4"
+              >
+                Expand
+              </a>
+              <a
+                href="../assets/img/lineages-pic-4.png"
+                download
+                class="download-btn"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="expand-lineages-pic-4"
+            tabindex="-1"
+            aria-labelledby="expand-lineages-pic-4-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid w-100 h-auto"
+                    height="auto"
+                    src="../assets/img/lineages-pic-4.png"
+                    alt="Maximum likelihood phylogeny showing genotypes for each serotype"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="between-section align-items-md-center flex-column end-section"
+        id="lineages-major-content"
+        style="display: none"
+      >
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Major Lineage</th>
+                <th>Size</th>
+                <th>Most Common Region</th>
+                <th>Oldest Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_A"
+                    >1I_A</a
+                  >
+                </td>
+                <td>58</td>
+                <td>Southeast Asia</td>
+                <td>1992-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_B"
+                    >1I_B</a
+                  >
+                </td>
+                <td>39</td>
+                <td>Southeast Asia</td>
+                <td>1981-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_C"
+                    >1I_C</a
+                  >
+                </td>
+                <td>147</td>
+                <td>Southeast Asia</td>
+                <td>2003-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_D"
+                    >1I_D</a
+                  >
+                </td>
+                <td>36</td>
+                <td>Southeast Asia</td>
+                <td>2000-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_E,1I_E.1,1I_E.2"
+                    >1I_E</a
+                  >
+                </td>
+                <td>1236</td>
+                <td>Southeast Asia</td>
+                <td>2002-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_F"
+                    >1I_F</a
+                  >
+                </td>
+                <td>73</td>
+                <td>Southeast Asia</td>
+                <td>1996-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_G"
+                    >1I_G</a
+                  >
+                </td>
+                <td>270</td>
+                <td>Southeast Asia</td>
+                <td>1996-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_H.2,1I_H,1I_H.1"
+                    >1I_H</a
+                  >
+                </td>
+                <td>483</td>
+                <td>Southeast Asia</td>
+                <td>1995-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_J"
+                    >1I_J</a
+                  >
+                </td>
+                <td>50</td>
+                <td>Southeast Asia</td>
+                <td>2000-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_K,1I_K.3,1I_K.1,1I_K.2"
+                    >1I_K</a
+                  >
+                </td>
+                <td>772</td>
+                <td>East Asia</td>
+                <td>1995-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1III_A"
+                    >1III_A</a
+                  >
+                </td>
+                <td>326</td>
+                <td>East Asia</td>
+                <td>2005-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1III_B"
+                    >1III_B</a
+                  >
+                </td>
+                <td>14</td>
+                <td>South Asia</td>
+                <td>2004-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1IV_A"
+                    >1IV_A</a
+                  >
+                </td>
+                <td>37</td>
+                <td>Pacific</td>
+                <td>1992-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1IV_B.2,1IV_B,1IV_B.1"
+                    >1IV_B</a
+                  >
+                </td>
+                <td>60</td>
+                <td>Southeast Asia</td>
+                <td>1974-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1IV_C"
+                    >1IV_C</a
+                  >
+                </td>
+                <td>11</td>
+                <td>East Asia</td>
+                <td>2002-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1V_A"
+                    >1V_A</a
+                  >
+                </td>
+                <td>64</td>
+                <td>South America</td>
+                <td>1985-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1V_B"
+                    >1V_B</a
+                  >
+                </td>
+                <td>35</td>
+                <td>Central America</td>
+                <td>1997-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1V_C"
+                    >1V_C</a
+                  >
+                </td>
+                <td>202</td>
+                <td>North America</td>
+                <td>1998-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1V_D.2,1V_D,1V_D.1"
+                    >1V_D</a
+                  >
+                </td>
+                <td>210</td>
+                <td>South America</td>
+                <td>2008-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1V_E"
+                    >1V_E</a
+                  >
+                </td>
+                <td>990</td>
+                <td>South America</td>
+                <td>1997-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1V_F"
+                    >1V_F</a
+                  >
+                </td>
+                <td>95</td>
+                <td>South America</td>
+                <td>2004-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1V_G"
+                    >1V_G</a
+                  >
+                </td>
+                <td>12</td>
+                <td>South America</td>
+                <td>1998-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1VI_A"
+                    >1VI_A</a
+                  >
+                </td>
+                <td>18</td>
+                <td>Sub Saharan Africa</td>
+                <td>2013-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1VI_B"
+                    >1VI_B</a
+                  >
+                </td>
+                <td>8</td>
+                <td>Sub Saharan Africa</td>
+                <td>2012-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_A.2.2,2II_A,2II_A.1,2II_A.2.1,2II_A.2"
+                    >2II_A</a
+                  >
+                </td>
+                <td>257</td>
+                <td>South Asia</td>
+                <td>1969-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_B"
+                    >2II_B</a
+                  >
+                </td>
+                <td>60</td>
+                <td>Sub Saharan Africa</td>
+                <td>1975-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_C.1,2II_C,2II_C.2"
+                    >2II_C</a
+                  >
+                </td>
+                <td>110</td>
+                <td>East Asia</td>
+                <td>2001-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_D.2,2II_D,2II_D.1,2II_D.3"
+                    >2II_D</a
+                  >
+                </td>
+                <td>83</td>
+                <td>East Asia</td>
+                <td>2005-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_E.1,2II_E.2,2II_E"
+                    >2II_E</a
+                  >
+                </td>
+                <td>196</td>
+                <td>Southeast Asia</td>
+                <td>2004-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_F.2.1,2II_F.1,2II_F.2,2II_F.1.1,2II_F.1.2,2II_F.2.2,2II_F"
+                    >2II_F</a
+                  >
+                </td>
+                <td>616</td>
+                <td>East Asia</td>
+                <td>2001-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_A,2III_A.1,2III_A.2"
+                    >2III_A</a
+                  >
+                </td>
+                <td>63</td>
+                <td>Southeast Asia</td>
+                <td>1988-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_B"
+                    >2III_B</a
+                  >
+                </td>
+                <td>145</td>
+                <td>North America</td>
+                <td>1990-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_C.1.1,2III_C.1,2III_C,2III_C.2,2III_C.1.2"
+                    >2III_C</a
+                  >
+                </td>
+                <td>501</td>
+                <td>South America</td>
+                <td>1998-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_D,2III_D.2,2III_D.3,2III_D.1.2,2III_D.1.1,2III_D.1,2III_D.1.3"
+                    >2III_D</a
+                  >
+                </td>
+                <td>433</td>
+                <td>Central America</td>
+                <td>1996-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2V_A.3,2V_A,2V_A.1,2V_A.4,2V_A.2"
+                    >2V_A</a
+                  >
+                </td>
+                <td>1090</td>
+                <td>Southeast Asia</td>
+                <td>1994-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2V_B"
+                    >2V_B</a
+                  >
+                </td>
+                <td>29</td>
+                <td>Southeast Asia</td>
+                <td>1994-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2V_C"
+                    >2V_C</a
+                  >
+                </td>
+                <td>34</td>
+                <td>Southeast Asia</td>
+                <td>1994-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2V_D"
+                    >2V_D</a
+                  >
+                </td>
+                <td>54</td>
+                <td>Southeast Asia</td>
+                <td>1995-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2V_E"
+                    >2V_E</a
+                  >
+                </td>
+                <td>26</td>
+                <td>Southeast Asia</td>
+                <td>2001-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3I_A.2,3I_A,3I_A.1"
+                    >3I_A</a
+                  >
+                </td>
+                <td>131</td>
+                <td>South Asia</td>
+                <td>1985-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3I_B"
+                    >3I_B</a
+                  >
+                </td>
+                <td>18</td>
+                <td>Pacific</td>
+                <td>1978-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3I_C"
+                    >3I_C</a
+                  >
+                </td>
+                <td>10</td>
+                <td>East Asia</td>
+                <td>2008-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3II_A.1,3II_A.2,3II_A.3,3II_A"
+                    >3II_A</a
+                  >
+                </td>
+                <td>601</td>
+                <td>Southeast Asia</td>
+                <td>1991-05-21</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3II_B"
+                    >3II_B</a
+                  >
+                </td>
+                <td>103</td>
+                <td>Southeast Asia</td>
+                <td>1994-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3III_A.1,3III_A,3III_A.2"
+                    >3III_A</a
+                  >
+                </td>
+                <td>63</td>
+                <td>Southeast Asia</td>
+                <td>1993-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3III_B,3III_B.3,3III_B.2,3III_B.1"
+                    >3III_B</a
+                  >
+                </td>
+                <td>506</td>
+                <td>North America</td>
+                <td>2002-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3III_C,3III_C.2,3III_C.1"
+                    >3III_C</a
+                  >
+                </td>
+                <td>642</td>
+                <td>Central America</td>
+                <td>1994-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4I_A.3,4I_A.1.1,4I_A.1.2,4I_A.1,4I_A,4I_A.2"
+                    >4I_A</a
+                  >
+                </td>
+                <td>600</td>
+                <td>Southeast Asia</td>
+                <td>1976-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4I_B.2,4I_B,4I_B.1"
+                    >4I_B</a
+                  >
+                </td>
+                <td>69</td>
+                <td>South Asia</td>
+                <td>1979-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4II_A.2,4II_A.1,4II_A"
+                    >4II_A</a
+                  >
+                </td>
+                <td>90</td>
+                <td>Southeast Asia</td>
+                <td>1973-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4II_B"
+                    >4II_B</a
+                  >
+                </td>
+                <td>209</td>
+                <td>South America</td>
+                <td>1953-01-01</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="lineages-figures-section between-section">
+          <div class="lineages-figure-wrapper">
+            <img
+              class="img-fluid"
+              src="../assets/img/major-figure-01.png"
+              alt="maximum likelihood phylogeny showing major lineages for each serotype"
+            />
+            <div class="buttons-wrapper">
+              <a
+                class="expand-btn"
+                type="button"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#expand-major-figure-01"
+              >
+                Expand
+              </a>
+              <a
+                href="../assets/img/major-figure-01.png"
+                download
+                class="download-btn"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="expand-major-figure-01"
+            tabindex="-1"
+            aria-labelledby="expand-major-figure-01-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid w-100 h-auto"
+                    height="auto"
+                    src="../assets/img/major-figure-01.png"
+                    alt="maximum likelihood phylogeny showing major lineages for each serotype"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lineages-figure-wrapper">
+            <img
+              class="img-fluid"
+              src="../assets/img/major-figure-02.png"
+              alt="maximum likelihood phylogeny showing major lineages for each serotype"
+            />
+            <div class="buttons-wrapper">
+              <a
+                class="expand-btn"
+                type="button"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#expand-major-figure-02"
+              >
+                Expand
+              </a>
+              <a
+                href="../assets/img/major-figure-02.png"
+                download
+                class="download-btn"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="expand-major-figure-02"
+            tabindex="-1"
+            aria-labelledby="expand-major-figure-02-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid w-100 h-auto"
+                    height="auto"
+                    src="../assets/img/major-figure-02.png"
+                    alt="maximum likelihood phylogeny showing major lineages for each serotype"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lineages-figure-wrapper">
+            <img
+              class="img-fluid"
+              src="../assets/img/major-figure-03.png"
+              alt="maximum likelihood phylogeny showing major lineages for each serotype"
+            />
+            <div class="buttons-wrapper">
+              <a
+                class="expand-btn"
+                type="button"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#expand-major-figure-03"
+              >
+                Expand
+              </a>
+              <a
+                href="../assets/img/major-figure-03.png"
+                download
+                class="download-btn"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="expand-major-figure-03"
+            tabindex="-1"
+            aria-labelledby="expand-major-figure-03-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid w-100 h-auto"
+                    height="auto"
+                    src="../assets/img/major-figure-03.png"
+                    alt="maximum likelihood phylogeny showing major lineages for each serotype"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lineages-figure-wrapper">
+            <img
+              class="img-fluid"
+              src="../assets/img/major-figure-04.png"
+              alt="maximum likelihood phylogeny showing major lineages for each serotype"
+            />
+            <div class="buttons-wrapper">
+              <a
+                class="expand-btn"
+                type="button"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#expand-major-figure-04"
+              >
+                Expand
+              </a>
+              <a
+                href="../assets/img/major-figure-04.png"
+                download
+                class="download-btn"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="expand-major-figure-04"
+            tabindex="-1"
+            aria-labelledby="expand-major-figure-04-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid w-100 h-auto"
+                    height="auto"
+                    src="../assets/img/major-figure-04.png"
+                    alt="maximum likelihood phylogeny showing major lineages for each serotype"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="between-section align-items-md-center flex-column end-section"
+        id="lineages-minor-content"
+        style="display: none"
+      >
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Minor Lineage</th>
+                <th>Size</th>
+                <th>Most Common Region</th>
+                <th>Oldest Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_E.1"
+                    >1I_E.1</a
+                  >
+                </td>
+                <td>698</td>
+                <td>Southeast Asia</td>
+                <td>2015-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_E.2"
+                    >1I_E.2</a
+                  >
+                </td>
+                <td>27</td>
+                <td>Pacific</td>
+                <td>2016-02-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_H.1"
+                    >1I_H.1</a
+                  >
+                </td>
+                <td>199</td>
+                <td>Southeast Asia</td>
+                <td>2006-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_H.2"
+                    >1I_H.2</a
+                  >
+                </td>
+                <td>23</td>
+                <td>Southeast Asia</td>
+                <td>2006-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_K.1"
+                    >1I_K.1</a
+                  >
+                </td>
+                <td>122</td>
+                <td>East Asia</td>
+                <td>2014-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_K.2"
+                    >1I_K.2</a
+                  >
+                </td>
+                <td>90</td>
+                <td>East Asia</td>
+                <td>2013-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1I_K.3"
+                    >1I_K.3</a
+                  >
+                </td>
+                <td>65</td>
+                <td>East Asia</td>
+                <td>2009-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1IV_B.1"
+                    >1IV_B.1</a
+                  >
+                </td>
+                <td>31</td>
+                <td>East Asia</td>
+                <td>2006-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1IV_B.2"
+                    >1IV_B.2</a
+                  >
+                </td>
+                <td>15</td>
+                <td>Southeast Asia</td>
+                <td>2012-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1V_D.1"
+                    >1V_D.1</a
+                  >
+                </td>
+                <td>195</td>
+                <td>South America</td>
+                <td>2008-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d1?c=Region&amp;f_Lineage=1V_D.2"
+                    >1V_D.2</a
+                  >
+                </td>
+                <td>15</td>
+                <td>South America</td>
+                <td>2015-10-09</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_A.1"
+                    >2II_A.1</a
+                  >
+                </td>
+                <td>161</td>
+                <td>East Asia</td>
+                <td>1996-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_A.2.1"
+                    >2II_A.2.1</a
+                  >
+                </td>
+                <td>48</td>
+                <td>South Asia</td>
+                <td>2009-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_A.2.2"
+                    >2II_A.2.2</a
+                  >
+                </td>
+                <td>35</td>
+                <td>Sub Saharan Africa</td>
+                <td>2010-09-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_C.1"
+                    >2II_C.1</a
+                  >
+                </td>
+                <td>55</td>
+                <td>Southeast Asia</td>
+                <td>2008-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_C.2"
+                    >2II_C.2</a
+                  >
+                </td>
+                <td>44</td>
+                <td>East Asia</td>
+                <td>2001-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_D.1"
+                    >2II_D.1</a
+                  >
+                </td>
+                <td>31</td>
+                <td>East Asia</td>
+                <td>2013-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_D.2"
+                    >2II_D.2</a
+                  >
+                </td>
+                <td>19</td>
+                <td>East Asia</td>
+                <td>2008-02-19</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_D.3"
+                    >2II_D.3</a
+                  >
+                </td>
+                <td>22</td>
+                <td>Southeast Asia</td>
+                <td>2005-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_E.1"
+                    >2II_E.1</a
+                  >
+                </td>
+                <td>161</td>
+                <td>Southeast Asia</td>
+                <td>2006-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_E.2"
+                    >2II_E.2</a
+                  >
+                </td>
+                <td>18</td>
+                <td>Pacific</td>
+                <td>2010-05-11</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_F.1.2,2II_F.1.1,2II_F.1"
+                    >2II_F.1</a
+                  >
+                </td>
+                <td>436</td>
+                <td>East Asia</td>
+                <td>2012-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_F.1.1"
+                    >2II_F.1.1</a
+                  >
+                </td>
+                <td>18</td>
+                <td>Southeast Asia</td>
+                <td>2020-06-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_F.1.2"
+                    >2II_F.1.2</a
+                  >
+                </td>
+                <td>61</td>
+                <td>South America</td>
+                <td>2017-10-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_F.2.1,2II_F.2.2,2II_F.2"
+                    >2II_F.2</a
+                  >
+                </td>
+                <td>19</td>
+                <td>East Asia</td>
+                <td>2011-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_F.2.1"
+                    >2II_F.2.1</a
+                  >
+                </td>
+                <td>25</td>
+                <td>South Asia</td>
+                <td>2014-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2II_F.2.2"
+                    >2II_F.2.2</a
+                  >
+                </td>
+                <td>16</td>
+                <td>Southeast Asia</td>
+                <td>2012-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_A.1"
+                    >2III_A.1</a
+                  >
+                </td>
+                <td>34</td>
+                <td>Southeast Asia</td>
+                <td>1999-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_A.2"
+                    >2III_A.2</a
+                  >
+                </td>
+                <td>16</td>
+                <td>Southeast Asia</td>
+                <td>1995-09-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_C.1.1,2III_C.1,2III_C.1.2"
+                    >2III_C.1</a
+                  >
+                </td>
+                <td>1</td>
+                <td>Caribbean</td>
+                <td>2014-01-12</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_C.1.1"
+                    >2III_C.1.1</a
+                  >
+                </td>
+                <td>257</td>
+                <td>South America</td>
+                <td>2016-01-29</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_C.1.2"
+                    >2III_C.1.2</a
+                  >
+                </td>
+                <td>15</td>
+                <td>Caribbean</td>
+                <td>2015-10-28</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_C.2"
+                    >2III_C.2</a
+                  >
+                </td>
+                <td>74</td>
+                <td>Caribbean</td>
+                <td>2014-02-09</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_D.1.2,2III_D.1.1,2III_D.1,2III_D.1.3"
+                    >2III_D.1</a
+                  >
+                </td>
+                <td>54</td>
+                <td>Central America</td>
+                <td>1999-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_D.1.1"
+                    >2III_D.1.1</a
+                  >
+                </td>
+                <td>129</td>
+                <td>Central America</td>
+                <td>2005-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_D.1.2"
+                    >2III_D.1.2</a
+                  >
+                </td>
+                <td>92</td>
+                <td>Central America</td>
+                <td>2009-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_D.1.3"
+                    >2III_D.1.3</a
+                  >
+                </td>
+                <td>61</td>
+                <td>Central America</td>
+                <td>2004-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_D.2"
+                    >2III_D.2</a
+                  >
+                </td>
+                <td>52</td>
+                <td>South America</td>
+                <td>2003-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2III_D.3"
+                    >2III_D.3</a
+                  >
+                </td>
+                <td>33</td>
+                <td>South America</td>
+                <td>2014-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2V_A.1"
+                    >2V_A.1</a
+                  >
+                </td>
+                <td>237</td>
+                <td>Southeast Asia</td>
+                <td>2015-12-30</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2V_A.2"
+                    >2V_A.2</a
+                  >
+                </td>
+                <td>15</td>
+                <td>Southeast Asia</td>
+                <td>2016-11-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2V_A.3"
+                    >2V_A.3</a
+                  >
+                </td>
+                <td>30</td>
+                <td>Southeast Asia</td>
+                <td>2004-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d2?c=Region&amp;f_Lineage=2V_A.4"
+                    >2V_A.4</a
+                  >
+                </td>
+                <td>16</td>
+                <td>Southeast Asia</td>
+                <td>2007-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3I_A.1"
+                    >3I_A.1</a
+                  >
+                </td>
+                <td>54</td>
+                <td>Southeast Asia</td>
+                <td>2015-06-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3I_A.2"
+                    >3I_A.2</a
+                  >
+                </td>
+                <td>37</td>
+                <td>South Asia</td>
+                <td>2015-12-22</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3II_A.1"
+                    >3II_A.1</a
+                  >
+                </td>
+                <td>40</td>
+                <td>Southeast Asia</td>
+                <td>2006-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3II_A.2"
+                    >3II_A.2</a
+                  >
+                </td>
+                <td>16</td>
+                <td>Southeast Asia</td>
+                <td>1995-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3II_A.3"
+                    >3II_A.3</a
+                  >
+                </td>
+                <td>110</td>
+                <td>Southeast Asia</td>
+                <td>1996-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3III_A.1"
+                    >3III_A.1</a
+                  >
+                </td>
+                <td>44</td>
+                <td>Southeast Asia</td>
+                <td>2004-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3III_A.2"
+                    >3III_A.2</a
+                  >
+                </td>
+                <td>17</td>
+                <td>Southeast Asia</td>
+                <td>2007-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3III_B.1"
+                    >3III_B.1</a
+                  >
+                </td>
+                <td>92</td>
+                <td>Southeast Asia</td>
+                <td>2002-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3III_B.2"
+                    >3III_B.2</a
+                  >
+                </td>
+                <td>32</td>
+                <td>Sub Saharan Africa</td>
+                <td>2009-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3III_B.3"
+                    >3III_B.3</a
+                  >
+                </td>
+                <td>359</td>
+                <td>North America</td>
+                <td>2012-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3III_C.1"
+                    >3III_C.1</a
+                  >
+                </td>
+                <td>228</td>
+                <td>South America</td>
+                <td>1998-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d3?c=Region&amp;f_Lineage=3III_C.2"
+                    >3III_C.2</a
+                  >
+                </td>
+                <td>203</td>
+                <td>Central America</td>
+                <td>2008-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4I_A.1.2,4I_A.1,4I_A.1.1"
+                    >4I_A.1</a
+                  >
+                </td>
+                <td>2</td>
+                <td>Southeast Asia</td>
+                <td>2011-06-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4I_A.1.1"
+                    >4I_A.1.1</a
+                  >
+                </td>
+                <td>79</td>
+                <td>Southeast Asia</td>
+                <td>2017-08-10</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4I_A.1.2"
+                    >4I_A.1.2</a
+                  >
+                </td>
+                <td>19</td>
+                <td>Southeast Asia</td>
+                <td>2015-10-03</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4I_A.2"
+                    >4I_A.2</a
+                  >
+                </td>
+                <td>328</td>
+                <td>Southeast Asia</td>
+                <td>1998-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4I_A.3"
+                    >4I_A.3</a
+                  >
+                </td>
+                <td>101</td>
+                <td>Southeast Asia</td>
+                <td>2002-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4I_B.1"
+                    >4I_B.1</a
+                  >
+                </td>
+                <td>39</td>
+                <td>South Asia</td>
+                <td>2009-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4I_B.2"
+                    >4I_B.2</a
+                  >
+                </td>
+                <td>28</td>
+                <td>South Asia</td>
+                <td>2009-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4II_A.1"
+                    >4II_A.1</a
+                  >
+                </td>
+                <td>15</td>
+                <td>Southeast Asia</td>
+                <td>2017-01-01</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    target="_blank"
+                    href="https://nextstrain.org/community/grubaughlab/DENV-genomics/d4?c=Region&amp;f_Lineage=4II_A.2"
+                    >4II_A.2</a
+                  >
+                </td>
+                <td>15</td>
+                <td>East Asia</td>
+                <td>2007-05-30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="lineages-figures-section between-section">
+          <div class="lineages-figure-wrapper">
+            <img
+              class="img-fluid"
+              src="../assets/img/minor-figure-01.png"
+              alt="maximum likelihood phylogeny showing major lineages for each serotype"
+            />
+            <div class="buttons-wrapper">
+              <a
+                class="expand-btn"
+                type="button"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#expand-minor-figure-01"
+              >
+                Expand
+              </a>
+              <a
+                href="../assets/img/minor-figure-01.png"
+                download
+                class="download-btn"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="expand-minor-figure-01"
+            tabindex="-1"
+            aria-labelledby="expand-minor-figure-01-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid w-100 h-auto"
+                    height="auto"
+                    src="../assets/img/minor-figure-01.png"
+                    alt="maximum likelihood phylogeny showing major lineages for each serotype"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lineages-figure-wrapper">
+            <img
+              class="img-fluid"
+              src="../assets/img/minor-figure-02.png"
+              alt="maximum likelihood phylogeny showing major lineages for each serotype"
+            />
+            <div class="buttons-wrapper">
+              <a
+                class="expand-btn"
+                type="button"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#expand-minor-figure-02"
+              >
+                Expand
+              </a>
+              <a
+                href="../assets/img/minor-figure-02.png"
+                download
+                class="download-btn"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="expand-minor-figure-02"
+            tabindex="-1"
+            aria-labelledby="expand-minor-figure-02-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid w-100 h-auto"
+                    height="auto"
+                    src="../assets/img/minor-figure-02.png"
+                    alt="maximum likelihood phylogeny showing major lineages for each serotype"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lineages-figure-wrapper">
+            <img
+              class="img-fluid"
+              src="../assets/img/minor-figure-03.png"
+              alt="maximum likelihood phylogeny showing major lineages for each serotype"
+            />
+            <div class="buttons-wrapper">
+              <a
+                class="expand-btn"
+                type="button"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#expand-minor-figure-03"
+              >
+                Expand
+              </a>
+              <a
+                href="../assets/img/minor-figure-03.png"
+                download
+                class="download-btn"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="expand-minor-figure-03"
+            tabindex="-1"
+            aria-labelledby="expand-minor-figure-03-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid w-100 h-auto"
+                    height="auto"
+                    src="../assets/img/minor-figure-03.png"
+                    alt="maximum likelihood phylogeny showing major lineages for each serotype"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lineages-figure-wrapper">
+            <img
+              class="img-fluid"
+              src="../assets/img/minor-figure-04.png"
+              alt="maximum likelihood phylogeny showing major lineages for each serotype"
+            />
+            <div class="buttons-wrapper">
+              <a
+                class="expand-btn"
+                type="button"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#expand-minor-figure-04"
+              >
+                Expand
+              </a>
+              <a
+                href="../assets/img/minor-figure-04.png"
+                download
+                class="download-btn"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="expand-minor-figure-04"
+            tabindex="-1"
+            aria-labelledby="expand-minor-figure-04-label"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid w-100 h-auto"
+                    height="auto"
+                    src="../assets/img/minor-figure-04.png"
+                    alt="maximum likelihood phylogeny showing major lineages for each serotype"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="../js/footer.js"></script>
+  </body>
+</html>
