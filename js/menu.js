@@ -1,16 +1,16 @@
 function createNavbar() {
   document.getElementById("navbar").innerHTML = `
     <div class="ss__navbar">
-        <a class="ss__navbar__logo" href="homepage.html">
+        <a class="ss__navbar__logo" href="/">
         <img
-        src="../assets/img/logo.png"
-        alt="Grubaugh logo" />
+        src="./assets/img/logo.png"
+        alt="Dengue Lineages logo" />
         </a>
             <ul class="menu d-flex gap-4x mb-0">
-                <li class="menu__item"><a class="menu__item__link" href="/pages/lineages.html">Lineages</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/pages/design.html">Design</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/pages/resources.html">Resources</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/pages/contact.html">Contact</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/lineages.html">Lineages</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/design.html">Design</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/resources.html">Resources</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/contact.html">Contact</a></li>
             </ul>
 
         <div class="ss__navbar__burger">
