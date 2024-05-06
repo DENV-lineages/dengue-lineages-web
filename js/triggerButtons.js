@@ -26,3 +26,17 @@ if (nomenclatureItem) {
     document.getElementById("design-nomenclature").classList.add("active");
   });
 }
+
+const requirementsItem = document.getElementById("requirements");
+
+if (requirementsItem) {
+  requirementsItem.addEventListener("click", () => {
+    document.getElementById("design-overview-content").style.display = "none";
+    document.getElementById("design-overview").classList.remove("active");
+
+    document.getElementById("design-requirements-content").style.display =
+      "flex";
+
+    document.getElementById("design-requirements").classList.add("active");
+  });
+}
