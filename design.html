@@ -47,16 +47,15 @@
             <p>There are three rules which must be met for a putative new lineage to be named.</p>
             <p>We note that we designate lineages based on defining <strong>nodes</strong> - i.e. all of the tips downstream of this node will be included in the lineage definition.</p>
             <ol>
-                <li>The branch leading up to the defining node should be <strong>at least 25 substitutions long</strong></li>
+                <li>The branch leading up to the defining node should be <strong>at least 20 substitutions long for minor lineages</strong> and <strong>25 substitutions long for major lineages</strong></li>
                 <li>There should be at least <strong>15 sequences</strong> in the putative clade</li>
-                <li>There should be at least one <strong>sister lineage</strong> the same number of nodes away from the parent defining node. This may be an existing or a new lineage.</li>
+                <li>There should be at least one <strong>sister lineage</strong> at the same level - i.e. with the same number of digits (e.g. 2II_A.1.1 and 2II_A.1.2 are sisters, but 3II_C.1 and 3II_C.2.1 are not). This may be an existing or a new lineage.</li>
             </ol>
-            <p>We understand that this third rule in particular may be challenging to do manually, and so we provide some python scripts for identifying sister lineages <a href="https://github.com/DENV-lineages/lineages-paper" target="_blank">here</a>. We do not recommend using the scripts on this repository for branch length because they are specific to our alignment length.</p>
             <p>The figure below shows examples of acceptable and non-acceptable lineage suggestions:</p>
             <img class="img-fluid mt-6x" src="./assets/img/requirements.png" alt="Examples of putative lineages and how they fit with the rules">
         </div>
         <div class="flex-column" id="design-nomenclature-content" style="display: none;">
-            <p>The nomenclature system is split into two levels, named major and minor lineages. As it stands, these levels have the same defining rules but use different naming systems.</p>
+            <p>The nomenclature system is split into two levels, named major and minor lineages. These levels have similar defing rules, but use different naming systems.</p>
             <p>Major lineages are defined using <strong>letters</strong> and minor lineages are defined using <strong>dots and numbers</strong>. Importantly, there is only one level of major lineages, but there can be as many nested levels of minor lineages as required.</p>
             <figure>
                 <img class="img-fluid mt-6x" src="./assets/img/homepage-img-01.png" alt="Lineage system using DENV-3 fgigure">
