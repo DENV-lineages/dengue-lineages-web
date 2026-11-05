@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=6" />
+    <title>Dengue Lineages</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="ss-navbar" id="navbar"></div>
+    </section>
+
+    <section class="hero"></section>
+
+    <section class="container start-section">
+      <p>
+        Each version of the lineage system is the full set of lineages after a
+        designation, and is named by its release date (YYYY-MM-DD). No lineage
+        has been withdrawn so far, so every version contains all lineages of
+        the previous one.
+      </p>
+      <p>
+        When you report lineages, please state the version you used, for
+        example "dengue lineage system, version <span style="white-space: nowrap">2026-10-06</span>".
+      </p>
+
+      <div
+        class="d-flex flex-wrap gap-4x justify-content-center between-section action-buttons-wrapper"
+      >
+        <button class="ss-button active" id="versions-overview">Overview</button>
+        <button class="ss-button" id="versions-2023-07-28">2023-07-28</button>
+        <button class="ss-button" id="versions-2024-08-31">2024-08-31</button>
+        <button class="ss-button" id="versions-2025-08-14">2025-08-14</button>
+        <button class="ss-button" id="versions-2026-10-06">2026-10-06</button>
+      </div>
+
+      <div
+        class="between-section align-items-md-center flex-column end-section"
+        id="versions-overview-content"
+        style="display: flex"
+      >
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Version</th>
+                <th>Lineages (DENV-1/2/3/4)</th>
+                <th>New</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="white-space: nowrap">2023-07-28</td>
+                <td>135 (41 / 53 / 24 / 17)</td>
+                <td>initial set</td>
+              </tr>
+              <tr>
+                <td style="white-space: nowrap">2024-08-31</td>
+                <td>188 (64 / 71 / 32 / 21)</td>
+                <td>53</td>
+              </tr>
+              <tr>
+                <td style="white-space: nowrap">2025-08-14</td>
+                <td>218 (70 / 82 / 37 / 29)</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td style="white-space: nowrap">2026-10-06</td>
+                <td>241 (75 / 94 / 41 / 31)</td>
+                <td>23</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-6x">
+          Counts include genotypes, major and minor lineages.
+        </p>
+      </div>
+
+      <div
+        class="between-section align-items-md-center flex-column end-section"
+        id="versions-2023-07-28-content"
+        style="display: none"
+      >
+      <p>Lineages of the initial designation.</p>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Serotype</th>
+                <th>New</th>
+                <th>Lineages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DENV-1</td>
+                <td>41</td>
+                <td>1I, 1II, 1III, 1III_A, 1III_B, 1IV, 1IV_A, 1IV_B, 1IV_B.1, 1IV_B.2, 1IV_C, 1I_A, 1I_B, 1I_C, 1I_D, 1I_E, 1I_E.1, 1I_E.2, 1I_F, 1I_G, 1I_H, 1I_H.1, 1I_H.2, 1I_J, 1I_K, 1I_K.1, 1I_K.2, 1I_K.3, 1V, 1VII, 1VII_A, 1VII_B, 1V_A, 1V_B, 1V_C, 1V_D, 1V_D.1, 1V_D.2, 1V_E, 1V_F, 1V_G</td>
+              </tr>
+              <tr>
+                <td>DENV-2</td>
+                <td>53</td>
+                <td>2I, 2II, 2III, 2III_A, 2III_A.1, 2III_A.2, 2III_B, 2III_C, 2III_C.1, 2III_C.1.1, 2III_C.1.2, 2III_C.2, 2III_D, 2III_D.1, 2III_D.1.1, 2III_D.1.2, 2III_D.1.3, 2III_D.2, 2III_D.3, 2II_A, 2II_A.1, 2II_A.2.1, 2II_A.2.2, 2II_B, 2II_C, 2II_C.1, 2II_C.2, 2II_D, 2II_D.1, 2II_D.2, 2II_D.3, 2II_E, 2II_E.1, 2II_E.2, 2II_F, 2II_F.1, 2II_F.1.1, 2II_F.1.2, 2II_F.2, 2II_F.2.1, 2II_F.2.2, 2IV, 2V, 2VI, 2V_A, 2V_A.1, 2V_A.2, 2V_A.3, 2V_A.4, 2V_B, 2V_C, 2V_D, 2V_E</td>
+              </tr>
+              <tr>
+                <td>DENV-3</td>
+                <td>24</td>
+                <td>3I, 3II, 3III, 3III_A, 3III_A.1, 3III_A.2, 3III_B, 3III_B.1, 3III_B.2, 3III_B.3, 3III_C, 3III_C.1, 3III_C.2, 3II_A, 3II_A.1, 3II_A.2, 3II_A.3, 3II_B, 3I_A, 3I_A.1, 3I_A.2, 3I_B, 3I_C, 3V</td>
+              </tr>
+              <tr>
+                <td>DENV-4</td>
+                <td>17</td>
+                <td>4I, 4II, 4III, 4II_A, 4II_A.1, 4II_A.2, 4II_B, 4IV, 4I_A, 4I_A.1, 4I_A.1.1, 4I_A.1.2, 4I_A.2, 4I_A.3, 4I_B, 4I_B.1, 4I_B.2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        class="between-section align-items-md-center flex-column end-section"
+        id="versions-2024-08-31-content"
+        style="display: none"
+      >
+      <p>Lineages added in version 2024-08-31.</p>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Serotype</th>
+                <th>New</th>
+                <th>Lineages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DENV-1</td>
+                <td>23</td>
+                <td>1III_A.1, 1III_A.2, 1III_A.3, 1III_A.4, 1I_E.1.1, 1I_E.1.2, 1I_E.3, 1I_E.4, 1I_H.3, 1I_K.1.1, 1I_K.1.2, 1I_K.4, 1I_K.5, 1I_K.6, 1I_K.7, 1V_D.1.1, 1V_D.1.2, 1V_E.1, 1V_E.2, 1V_E.3, 1V_E.4, 1V_H, 1V_J</td>
+              </tr>
+              <tr>
+                <td>DENV-2</td>
+                <td>18</td>
+                <td>2III_E, 2II_A.1.1, 2II_A.1.1.1, 2II_A.1.1.2, 2II_A.1.2, 2II_A.2, 2II_D.1.1, 2II_D.1.2, 2II_F.1.1.1, 2II_F.1.1.2, 2II_F.1.1.3, 2II_F.1.1.4, 2II_F.1.1.5, 2II_F.1.1.6, 2II_F.1.3, 2V_A.1.1, 2V_A.1.2, 2V_A.1.3</td>
+              </tr>
+              <tr>
+                <td>DENV-3</td>
+                <td>8</td>
+                <td>3III_B.3.1, 3III_B.3.2, 3III_C.2.1, 3III_C.2.2, 3II_A.4, 3II_A.5, 3I_A.1.1, 3I_A.1.2</td>
+              </tr>
+              <tr>
+                <td>DENV-4</td>
+                <td>4</td>
+                <td>4II_B.1, 4II_B.1.1, 4II_B.1.2, 4II_B.2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        class="between-section align-items-md-center flex-column end-section"
+        id="versions-2025-08-14-content"
+        style="display: none"
+      >
+      <p>Lineages added in version 2025-08-14.</p>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Serotype</th>
+                <th>New</th>
+                <th>Lineages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DENV-1</td>
+                <td>6</td>
+                <td>1I_B.1, 1I_B.2, 1I_K.1.1.1, 1I_K.1.1.2, 1VI, 1V_D.1.3</td>
+              </tr>
+              <tr>
+                <td>DENV-2</td>
+                <td>11</td>
+                <td>2III_D.2.1, 2III_D.2.2, 2III_D.3.1, 2III_D.3.2, 2II_D.4, 2II_F.1.1.7, 2II_F.1.1.8, 2II_F.1.3.1, 2II_F.1.3.2, 2II_F.2.3, 2V_A.5</td>
+              </tr>
+              <tr>
+                <td>DENV-3</td>
+                <td>5</td>
+                <td>3III_B.2.1, 3III_B.2.2, 3III_B.4, 3I_C.1, 3I_C.2</td>
+              </tr>
+              <tr>
+                <td>DENV-4</td>
+                <td>8</td>
+                <td>4II_A.1.1, 4II_A.1.1.1, 4II_A.1.1.2, 4II_A.1.2, 4II_A.3, 4II_B.1.3, 4I_A.3.1, 4I_A.3.2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        class="between-section align-items-md-center flex-column end-section"
+        id="versions-2026-10-06-content"
+        style="display: none"
+      >
+      <p>Lineages added in version 2026-10-06.</p>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Serotype</th>
+                <th>New</th>
+                <th>Lineages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DENV-1</td>
+                <td>5</td>
+                <td>1V_A.1, 1V_A.2, 1V_D.1.4, 1V_F.1, 1V_F.2</td>
+              </tr>
+              <tr>
+                <td>DENV-2</td>
+                <td>12</td>
+                <td>2III_C.3, 2III_D.1.2.1, 2III_D.1.2.2, 2III_D.1.2.3, 2II_D.4.1, 2II_D.4.2, 2II_F.1.1.2.1, 2II_F.1.1.2.2, 2II_F.1.1.2.3, 2II_F.1.1.9, 2II_F.1.1.10, 2V_F</td>
+              </tr>
+              <tr>
+                <td>DENV-3</td>
+                <td>4</td>
+                <td>3III_B.5, 3I_C.2.1, 3I_C.2.2, 3I_C.2.3</td>
+              </tr>
+              <tr>
+                <td>DENV-4</td>
+                <td>2</td>
+                <td>4II_A.1.3, 4II_B.3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="./js/footer.js"></script>
