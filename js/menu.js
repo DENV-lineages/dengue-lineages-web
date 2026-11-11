@@ -9,6 +9,7 @@ function createNavbar() {
             <ul class="menu d-flex gap-4x mb-0">
                 <li class="menu__item"><a class="menu__item__link" href="/design.html">Design</a></li>
                 <li class="menu__item"><a class="menu__item__link" href="/lineages.html">Lineages</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/versions.html">Versions</a></li>
                 <li class="menu__item"><a class="menu__item__link" href="/resources.html">Resources</a></li>
                 <li class="menu__item"><a class="menu__item__link" href="/contact.html">Contact</a></li>
             </ul>

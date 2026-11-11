@@ -544,3 +544,31 @@ footer a:hover {
   }
   
 }
+
+/* maintained by */
+.maintainer-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4.8rem;
+  margin-top: 2.4rem;
+}
+
+.maintainer-logos img {
+  height: 64px;
+  width: auto;
+}
+
+/* the ITpS logo stacks its name in four short lines; at the Yale height it reads smaller */
+.maintainer-logos img.logo-itps {
+  height: 96px;
+}
+
+.maintained-by h1 {
+  font-weight: 400;
+}
+
+/* justified paragraphs */
+p {
+  text-align: justify;
+}
