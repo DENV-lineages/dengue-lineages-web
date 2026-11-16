@@ -577,7 +577,7 @@ footer a:hover {
 .versions-content .table-responsive,
 .versions-content .table-caption {
   width: 100%;
-  max-width: 80rem;
+  max-width: 100rem;
 }
 
 .versions-content table {
@@ -596,4 +596,70 @@ footer a:hover {
 .nowrap,
 .versions-content th {
   white-space: nowrap;
+}
+
+/* coluna de links por linhagem (Nextstrain, GenSpectrum, Pathoplexus) */
+/* Em tela larga as tabelas usam padding 1.6rem 5.6rem. Com uma coluna a mais
+   isso abria vaos enormes e espremia os titulos das duas ultimas colunas em
+   duas linhas. Aqui o espacamento lateral cai para 2.4rem, so nas tabelas de
+   linhagem, e nenhum titulo quebra. */
+.lineage-table th,
+.lineage-table td {
+  padding: 1.6rem 2.4rem;
+  white-space: nowrap;
+}
+.lineage-table td.lineage-name,
+.lineage-table th.lineage-name {
+  padding-right: 1.2rem;
+}
+.lineage-table td.lineage-links,
+.lineage-table th.lineage-links {
+  width: 1%;
+  padding-left: 1.2rem;
+  text-align: center;
+}
+.lineage-table td.lineage-links .icons {
+  display: inline-flex;
+  gap: 4px;
+}
+.lineage-table td.lineage-links .ib {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  display: inline-grid;
+  place-items: center;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  position: relative;
+  transition: 0.15s;
+}
+.lineage-table td.lineage-links a.ib:hover {
+  border-color: #888;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+/* o GenSpectrum fica com a mesma aparencia dos outros dois, so sem link
+   (decisao dele em 12/11); a dica no hover e que avisa que ainda nao existe */
+.lineage-table td.lineage-links .ib.is-off {
+  cursor: default;
+}
+.lineage-table td.lineage-links .ib img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  display: block;
+}
+.lineage-table td.lineage-links .ib[data-tip]:hover::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  font-size: 11px;
+  white-space: nowrap;
+  padding: 4px 7px;
+  border-radius: 4px;
+  z-index: 2;
 }
