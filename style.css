@@ -568,7 +568,32 @@ footer a:hover {
   font-weight: 400;
 }
 
-/* justified paragraphs */
-p {
-  text-align: justify;
+/* versions page */
+/* tables and captions share one centred width so their edges line up */
+.versions-content {
+  align-items: center;
+}
+
+.versions-content .table-responsive,
+.versions-content .table-caption {
+  width: 100%;
+  max-width: 80rem;
+}
+
+.versions-content table {
+  width: 100%;
+}
+
+.versions-content .table-caption {
+  margin: 0 0 1.6rem;
+  text-align: center;
+}
+
+.versions-content .table-responsive + .table-caption {
+  margin-top: var(--4x);
+}
+
+.nowrap,
+.versions-content th {
+  white-space: nowrap;
 }
